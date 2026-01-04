@@ -1,0 +1,74 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @apply bg-white text-gray-900 transition-colors duration-300;
+}
+
+body.dark {
+  @apply bg-gray-950 text-gray-100;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600 dark:bg-gray-500;
+}
+
+/* Custom animations */
+.text-gradient {
+  background: linear-gradient(135deg, #000000 0%, #404040 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
