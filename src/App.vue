@@ -14,10 +14,7 @@ export default {
   name: "App",
   setup() {
     const { initTheme } = useTheme();
-
-    // Initialize theme on mount
     initTheme();
-
     return {};
   },
 };

@@ -129,6 +129,8 @@ import {
   BookOpen,
   BarChart3,
   Bitcoin,
+  Plane,
+  Trophy,
 } from "lucide-vue-next";
 
 export default {
@@ -141,6 +143,8 @@ export default {
     BookOpen,
     BarChart3,
     Bitcoin,
+    Plane,
+    Trophy,
   },
   data() {
     return {
@@ -160,6 +164,59 @@ export default {
       // - techBadgeClass: Tailwind classes for tech badges
       // - links: Array of link objects with 'icon' and 'url' properties
       projects: [
+        {
+          title: "Go4Explore – Travel Booking Platform",
+          shortTitle: "Go4Explore",
+          subtitle: "Travel Booking Platform",
+          description:
+            "Explore amazing tour packages, group trips, thrilling treks, Domestic & International travel packages with Go4Explore. Our team crafts the finest travel itineraries for your ideal journey. Full stack project built with latest technology.",
+          icon: "Plane",
+          gradient: "bg-gradient-to-br from-teal-500 to-cyan-700",
+          subtitleColor: "text-teal-100",
+          imagePosition: "right",
+          featuresTitle: "Key Features",
+          featureDotColor: "bg-teal-500",
+          features: [
+            "Tour Package Booking",
+            "Group Trips",
+            "Trek Adventures",
+            "International Travel",
+          ],
+          techStack: ["Next.js", "Node.js", "Express", "MongoDB", "Nuxt.js"],
+          techBadgeClass: "bg-teal-600 dark:bg-teal-700",
+          links: [
+            { icon: "Github", url: "#" },
+            { icon: "ExternalLink", url: "https://go4explore.com" },
+          ],
+        },
+        {
+          title: "Quiz Mania",
+          shortTitle: "Quiz Mania",
+          subtitle: "Multiplayer Quiz Game",
+          description:
+            "The Ultimate Trivia Experience - Challenge your friends in real-time multiplayer quiz battles. Test your knowledge, climb the leaderboard, and become the ultimate quiz champion. Features live gameplay, instant scoring, and competitive rankings.",
+          icon: "Trophy",
+          gradient: "bg-gradient-to-br from-orange-500 to-red-600",
+          subtitleColor: "text-orange-100",
+          imagePosition: "left",
+          featuresTitle: "Game Features",
+          featureDotColor: "bg-orange-500",
+          features: [
+            "Real-time Multiplayer",
+            "Live Leaderboards",
+            "Host & Join Games",
+            "Instant Scoring",
+          ],
+          techStack: ["Nuxt.js", "WebSockets", "Node.js", "Express", "MongoDB"],
+          techBadgeClass: "bg-orange-600 dark:bg-red-700",
+          links: [
+            { icon: "Github", url: "#" },
+            {
+              icon: "ExternalLink",
+              url: "https://multiplayer-quiz-mania.vercel.app/",
+            },
+          ],
+        },
         {
           title: "CryptoSight",
           shortTitle: "CryptoSight",
